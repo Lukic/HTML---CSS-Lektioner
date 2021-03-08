@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  margin: 100px;
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  border-radius: 50% 80% 70% 40% / 50% 70% 30% 60%;
+  animation: custom 10s ease-in-out infinite;
+}
+
+#box-one {
+  border: 10px solid #fff;
+  overflow: hidden;
+}
+
+#box-one img {
+  mix-blend-mode: multiply;
+}
+
+@keyframes custom {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 77% 23% 17% 83% / 37% 83% 17% 63%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
